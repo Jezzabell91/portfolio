@@ -57,9 +57,9 @@ a:hover {
     color: darkred;
 }
 
-a:active {
+/* a:active {
     text-shadow: 2px 2px;
-}
+} */
 
 .landing-grid {
     
@@ -67,4 +67,3 @@ a:active {
     place-items: center;
     /* grid-template-rows: auto 1fr auto; */
 }
-
