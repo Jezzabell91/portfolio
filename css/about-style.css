@@ -4,6 +4,7 @@ html, body {
     font-family: 'Roboto';
 }
 
+
 picture img {
     height: 125px;
     width: 125px;
@@ -25,4 +26,66 @@ a:hover {
 
 ul {
     list-style: none;
+}
+
+.left-side {
+    display: flex;
+}
+
+.right-side {
+    background-color: lightgrey;
+}
+
+@media screen and (max-width: 768px) {
+    .left-side {    
+        flex-wrap: wrap;
+ 
+
+    }
+
+    #profile-picture {
+        flex: 0 0 auto;
+    }
+    
+    #bio {
+        flex: 0 0 auto;
+    }
+    
+    #feature-title {
+        flex: 2 0 768px;
+    }
+
+}
+
+
+
+/* Table - 4 grid columns */
+@media screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 5fr, 1fr, 6fr, 1fr;
+    }
+
+    .left-side {
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-column: 1 / 2;
+        background-color: dimgrey;
+    }
+
+    .right-side {
+        grid-column: 3 / 4;
+    }
+
+    #last-frame {
+        grid-column: 4 / 5;
+        background-color: #fff;
+    }
+
+}
+
+
+/* Desktop - 5 grid columns */
+@media screen and (min-width: 1024px) {
+
 }
