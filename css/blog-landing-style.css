@@ -1,0 +1,33 @@
+header {
+    justify-content: center;
+}
+
+nav {
+    max-width: 80vw;
+    background-color: blue;
+    text-align: center;
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+li {
+    font-size: 5vw;
+}
+
+img {
+    width: 360px;
+    height: 240px;
+}
+
+.blog-card {
+    background-color: mediumaquamarine;
+    border: solid darkgray;
+    border-radius: 10%;
+    padding: 20px;
+    margin: 10px;
+}
