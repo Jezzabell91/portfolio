@@ -4,8 +4,12 @@ html, body {
     font-family: 'Roboto';
 }
 
+#landing-grid {
+    display: grid;
+    place-items: center;
+}
+
 header {
-    /* background-color: chocolate; */
     grid-row: 1 / 2;
 }
 
@@ -15,7 +19,6 @@ h1 {
 
 picture {
     grid-row: 2 / 3;
-    /* background-color: salmon; */
 }
 
 #profile img{
@@ -24,10 +27,8 @@ picture {
     border-radius: 50%;
 }
 
-.link-list {
+#link-list {
     max-width: 50%;
-
-    /* background-color: pink; */
     grid-row: 3 / 4;
     font-size: 5vh;
 }
@@ -57,13 +58,4 @@ a:hover {
     color: darkred;
 }
 
-/* a:active {
-    text-shadow: 2px 2px;
-} */
 
-.landing-grid {
-    
-    display: grid;
-    place-items: center;
-    /* grid-template-rows: auto 1fr auto; */
-}
