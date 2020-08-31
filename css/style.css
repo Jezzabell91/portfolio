@@ -1,0 +1,70 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+header {
+    /* background-color: chocolate; */
+    grid-row: 1 / 2;
+}
+
+h1 {
+    text-align: center;
+}
+
+picture {
+    grid-row: 2 / 3;
+    /* background-color: salmon; */
+}
+
+#profile img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.link-list {
+    max-width: 50%;
+
+    /* background-color: pink; */
+    grid-row: 3 / 4;
+    font-size: 5vh;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    text-align: center;
+    margin: 15px, 10px;
+    padding: 10px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+a:link {
+    color: darkgray;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    text-shadow: 2px 2px;
+}
+
+.landing-grid {
+    
+    display: grid;
+    place-items: center;
+    /* grid-template-rows: auto 1fr auto; */
+}
+
