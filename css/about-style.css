@@ -50,7 +50,7 @@ ul {
     #bio {
         flex: 0 0 auto;
     }
-    
+    /* Have title sitting on top by itself */
     #feature-title {
         flex: 2 0 768px;
     }
@@ -61,20 +61,27 @@ ul {
 
 /* Table - 4 grid columns */
 @media screen and (min-width: 768px) {
+
+    body {
+        height: 100vh;
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: 5fr, 1fr, 6fr, 1fr;
+        grid-template-rows: repeat(12, 1fr);
     }
 
     .left-side {
         flex-direction: column;
-        justify-content: space-evenly;
         grid-column: 1 / 2;
+        grid-row: 1 / 13;
         background-color: dimgrey;
     }
 
     .right-side {
         grid-column: 3 / 4;
+        grid-row: 2 / 6;
     }
 
     #last-frame {
@@ -87,5 +94,28 @@ ul {
 
 /* Desktop - 5 grid columns */
 @media screen and (min-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr, 2fr, 1fr, 4fr, 3fr;
+        grid-template-rows: repeat(10, 1fr);
+    }
+
+    .left-side {
+        flex-direction: column;
+        grid-column: 2 / 3;
+        grid-row: 1 / 7;
+        background-color: dimgrey;
+    }
+
+    .right-side {
+        grid-column: 4 / 5;
+        grid-row: 5 / 9;
+    }
+
+    #last-frame {
+        grid-column: 5 / 6;
+        background-color: #fff;
+    }
+
 
 }
