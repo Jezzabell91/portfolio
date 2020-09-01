@@ -1,15 +1,11 @@
-
+#parent {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
 #landing-grid {
     display: grid;
     place-items: center;
-}
-
-header {
-    grid-row: 1 / 2;
-}
-
-picture {
-    grid-row: 2 / 3;
 }
 
 #profile img{
@@ -20,7 +16,6 @@ picture {
 
 #link-list {
     max-width: 50%;
-    grid-row: 3 / 4;
     font-size: 5vh;
 }
 
