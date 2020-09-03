@@ -4,7 +4,7 @@
 - [ ] Fix Styling on Blog landing page
 - [ ] Fix Styling on Blog-post page
 - [ ] Create contact page
-- [ ] Fill in content for About Page
+- [x] Fill in content for About Page
 - [ ] Link Dummy resume.pdf
 - [ ] Implement SRI
 - [ ] Place comments in the CSS and HTML code to indentify each component
