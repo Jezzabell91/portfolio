@@ -4,6 +4,11 @@ html, body {
     font-family: 'Roboto';
 }
 
+h1 {
+    font-size: 40px;
+    color: cadetblue;
+}
+
 
 picture img {
     height: 125px;
@@ -30,17 +35,19 @@ ul {
 
 #left-side {
     display: flex;
+    max-width: 500px;
+
 }
 
 #right-side {
     background-color: lightgrey;
 }
 
+
 @media screen and (max-width: 768px) {
     #left-side {    
         flex-wrap: wrap;
- 
-
+        justify-content: center;
     }
 
     #profile-picture {
@@ -48,13 +55,27 @@ ul {
     }
     
     #bio {
-        flex: 0 0 auto;
+        flex: 0 0 300px;
+        margin-left: 15px;
+        margin-top: 25px;
     }
     /* Have title sitting on top by itself */
     #feature-title {
-        flex: 2 0 768px;
+
+        flex: 0 0 400px;
+
     }
 
+}
+
+#nav-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#nav-list li {
+    margin: 25px;
 }
 
 
@@ -66,6 +87,11 @@ ul {
         height: 100vh;
     }
 
+    #bio {
+        margin-left: 15px;
+        margin-top: 25px;
+    }
+
     #grid-container {
         display: grid;
         grid-template-columns: 5fr, 1fr, 6fr, 1fr;
@@ -74,6 +100,7 @@ ul {
 
     #left-side {
         flex-direction: column;
+        align-items: center;
         grid-column: 1 / 2;
         grid-row: 1 / 13;
         background-color: dimgrey;
@@ -84,7 +111,12 @@ ul {
         grid-row: 2 / 6;
     }
 
-    #last-frame {
+    #nav-footer{
+        grid-column: 3 / 4;
+        grid-row: 8 / 9;
+    }
+
+    #last-fr {
         grid-column: 4 / 5;
         background-color: #fff;
     }
@@ -101,6 +133,7 @@ ul {
     }
 
     #left-side {
+
         flex-direction: column;
         grid-column: 2 / 3;
         grid-row: 1 / 7;
@@ -112,7 +145,8 @@ ul {
         grid-row: 5 / 9;
     }
 
-    #last-frame {
+
+    #last-fr {
         grid-column: 5 / 6;
         background-color: #fff;
     }
