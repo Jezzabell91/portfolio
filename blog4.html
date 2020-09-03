@@ -12,6 +12,7 @@
 <body>
 <section id="parent">
     <header>
+        <!-- Navigation Bar with links to other pages -->
         <nav id="link-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,7 +21,7 @@
             </ul>
         </nav>
 
-
+        <!-- Navigation Bar with links to previous post, blog home and next blog -->
         <nav id="blog-nav">
             <ul>
                 <li><a href="blog3.html">&lAarr; Previous</a></li>
@@ -29,8 +30,8 @@
             </ul>
         </nav>
 
+        <!-- Component for title box with title, date posted and blog teaser -->
         <section id="title-box">
-            <div class="content-container"></div>
             <h2>Creating This Portfolio - Day 4</h2>
             <p>Day 4 as always brings new challenges. How the hell does flex and grid work and why is it so hard. 
             </p>
@@ -39,7 +40,9 @@
         </section>
     </header>
 
+    <!-- Article element containing image and paragraphs for blog text -->
     <article class="content-container">
+        <!-- Picture element, used with srcset to allow browser to select which image to load based on window size -->
         <picture class="blog-image">
             <source media="(min-width: 1024px") srcset="img/blog5-large.jpg">
             <source media="(min-width: 768px") srcset="img/blog5-medium.jpg">

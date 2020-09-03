@@ -12,6 +12,7 @@
 <body>
     <section id="parent">
         <header>
+            <!-- Navigation Bar with links to other pages -->
             <nav id="link-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -19,8 +20,8 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-
-
+    
+            <!-- Navigation Bar with links to blog home and next blog -->
             <nav id="blog-nav">
                 <ul>
                     <li><a href="blog.html">Blog Home</a></li>
@@ -28,8 +29,8 @@
                 </ul>
             </nav>
 
+            <!-- Component for title box with title, date posted and blog teaser -->
             <section id="title-box">
-                <div class="content-container"></div>
                 <h2>Creating This Portfolio - Day 1</h2>
                 <p>It’s day 1 of the first assignment with Coder Academy. Time to create a portfolio website using HTML
                     + CSS.
@@ -39,7 +40,9 @@
             </section>
         </header>
 
+         <!-- Article element containing image and paragraphs for blog text -->
         <article class="content-container">
+            <!-- Picture element, used with srcset to allow browser to select which image to load based on window size -->
             <picture class="blog-image">
                 <source media="(min-width: 1024px" ) srcset="img/blog5-large.jpg">
                 <source media="(min-width: 768px" ) srcset="img/blog5-medium.jpg">

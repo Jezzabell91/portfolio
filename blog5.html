@@ -12,6 +12,7 @@
 <body>
 <section id="parent">
     <header>
+        <!-- Navigation Bar with links to other pages -->
         <nav id="link-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,7 +21,7 @@
             </ul>
         </nav>
 
-
+        <!-- Navigation Bar with links to previous post and blog home -->
         <nav id="blog-nav">
             <ul>
                 <li><a href="blog4.html">&lAarr; Previous</a></li>
@@ -28,8 +29,8 @@
             </ul>
         </nav>
 
+        <!-- Component for title box with title, date posted and blog teaser -->
         <section id="title-box">
-            <div class="content-container"></div>
             <h2>Creating This Portfolio</h2>
             <p>On day 5 of working on the portfolio Jeremy discovers the benefit of throwing it all out and starting
                 again
@@ -40,7 +41,9 @@
         </section>
     </header>
 
+     <!-- Article element containing image and paragraphs for blog text -->
     <article class="content-container">
+        <!-- Picture element, used with srcset to allow browser to select which image to load based on window size -->
         <picture class="blog-image">
             <source media="(min-width: 1024px") srcset="img/blog5-large.jpg">
             <source media="(min-width: 768px") srcset="img/blog5-medium.jpg">
