@@ -53,6 +53,16 @@ ul {
     background-color: lightgrey;
 }
 
+.content {
+    margin-left: 15px;
+    color: #555555;
+}
+
+.content h2 {
+    font-size: 24px;
+    text-shadow: 0.5px 0.5px #708090;
+}
+
 
 @media screen and (max-width: 768px) {
     #left-side {    
