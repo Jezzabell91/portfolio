@@ -2,13 +2,30 @@ html, body {
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto';
+    background-color: rgb(240, 240, 240);
 }
 
 h1 {
-    font-size: 40px;
-    color: cadetblue;
+    font-size: 3em;
+    color: rgb(240, 240, 240);
+    text-shadow: 2px 2px dimgray;
 }
 
+blockquote {
+
+    background: rgb(240, 240, 240);
+  border-left: 10px solid #ccc;
+
+  padding: 0.5em 10px;
+  color: #535b63;
+}
+
+
+#bio p{
+    color: rgb(240, 240, 240);
+    text-shadow: 1px 1px dimgray;
+    padding: 10px;
+}
 
 picture img {
     height: 125px;
@@ -35,8 +52,7 @@ ul {
 
 #left-side {
     display: flex;
-    max-width: 500px;
-
+    background-color: #708090;
 }
 
 #right-side {
@@ -48,6 +64,7 @@ ul {
     #left-side {    
         flex-wrap: wrap;
         justify-content: center;
+
     }
 
     #profile-picture {
@@ -61,9 +78,8 @@ ul {
     }
     /* Have title sitting on top by itself */
     #feature-title {
-
-        flex: 0 0 400px;
-
+        flex: 1 1 768px;
+        margin-left: 15px;
     }
 
 }
@@ -94,20 +110,19 @@ ul {
 
     #grid-container {
         display: grid;
-        grid-template-columns: 5fr, 1fr, 6fr, 1fr;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(12, 1fr);
     }
 
     #left-side {
         flex-direction: column;
         align-items: center;
-        grid-column: 1 / 2;
+        grid-column: 1 / 3;
         grid-row: 1 / 13;
-        background-color: dimgrey;
     }
 
     #right-side {
-        grid-column: 3 / 4;
+        grid-column: 3 / 5;
         grid-row: 2 / 6;
     }
 
@@ -116,10 +131,6 @@ ul {
         grid-row: 8 / 9;
     }
 
-    #last-fr {
-        grid-column: 4 / 5;
-        background-color: #fff;
-    }
 
 }
 
@@ -128,28 +139,25 @@ ul {
 @media screen and (min-width: 1024px) {
     #grid-container {
         display: grid;
-        grid-template-columns: 2fr, 2fr, 1fr, 4fr, 3fr;
         grid-template-rows: repeat(10, 1fr);
     }
 
     #left-side {
-
-        flex-direction: column;
         grid-column: 2 / 3;
         grid-row: 1 / 7;
-        background-color: dimgrey;
+
     }
 
     #right-side {
-        grid-column: 4 / 5;
+        grid-column: 3 / 4;
         grid-row: 5 / 9;
     }
 
-
-    #last-fr {
-        grid-column: 5 / 6;
-        background-color: #fff;
+    #nav-footer{
+        grid-column: 2 / 4;
+        grid-row: 10 / 11;
     }
+
 
 
 }
