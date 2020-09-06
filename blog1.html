@@ -10,44 +10,48 @@
 </head>
 
 <body>
-    <section id="parent">
-        <header>
-            <!-- Navigation Bar with links to other pages -->
-            <nav class="nav-list">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-    
-            <!-- Navigation Bar with links to blog home and next blog -->
-            <nav class="blog-list">
-                <ul>
-                    <li><a href="blog.html">Blog Home</a></li>
-                    <li><a href="blog2.html">Next &rAarr;</a></li>
-                </ul>
-            </nav>
+    <header>
+        <!-- Navigation Bar with links to other pages -->
+        <nav id="nav-list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-            <!-- Component for title box with title, date posted and blog teaser -->
-            <section id="title-box">
-                <h2>Creating This Portfolio - Day 1</h2>
-                <p>It’s day 1 of the first assignment with Coder Academy. Time to create a portfolio website using HTML
-                    + CSS.
-                </p>
-                <time datetime="2020-08-27">Posted on August 27 2020</time>
-                </div>
-            </section>
-        </header>
 
-         <!-- Article element containing image and paragraphs for blog text -->
-        <article class="content-container">
-            <!-- Picture element, used with srcset to allow browser to select which image to load based on window size -->
-            <picture class="blog-image">
-                <source media="(min-width: 1024px" ) srcset="img/blog5-large.jpg">
-                <source media="(min-width: 768px" ) srcset="img/blog5-medium.jpg">
-                <img src="img/blog5-small.jpg" alt="Throwing out the trash">
-            </picture>
+
+        <!-- Component for title box with title, date posted and blog teaser -->
+        <section id="title-box">
+            <h2>Creating This Portfolio - Day 1</h2>
+            <p>It’s day 1 of the first assignment with Coder Academy. Time to create a portfolio website using HTML
+                + CSS.
+            </p>
+            <time datetime="2020-08-27">Posted on August 27 2020</time>
+            </div>
+        </section>
+
+        <!-- Navigation Bar with links to blog home and next blog -->
+        <nav id="blog-list">
+            <ul>
+                <li><a href="blog.html">Blog Home</a></li>
+                <li><a href="blog2.html">Next &rAarr;</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Article element containing image and paragraphs for blog text -->
+    <article id="content-container">
+        <!-- Picture element, used with srcset to allow browser to select which image to load based on window size -->
+        <picture class="blog-image">
+            <source media="(min-width: 1024px" ) srcset="img/blog5-large.jpg">
+            <source media="(min-width: 768px" ) srcset="img/blog5-medium.jpg">
+            <img src="img/blog5-small.jpg" alt="Throwing out the trash">
+        </picture>
+        <!-- All text of the article is grouped together in one section -->
+        <section id="article-text">
+            <h3>Day 1</h3>
             <p>
                 Pokem ipsum dolor sit amet Salamence lorem ipsum dolor sit amet Moltres Slakoth Swadloon Badge. Cascade
                 Badge Lavender Town Water Gun Victini Relicanth Mineral Badge Audino. Ground Swoobat Nidorino the enemy
@@ -66,8 +70,8 @@
                 Sandshrew Jellicent. Sapphire Escavalier Bronzor Pokemon The Movie 2000 Omastar Carnivine Moltres.
                 Harden Stunfisk Salamence Sableye Earthquake Gothita Kanto.
             </p>
-        </article>
-    </section>
+        </section>
+    </article>
 
 </body>
 

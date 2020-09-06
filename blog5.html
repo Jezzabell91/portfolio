@@ -10,10 +10,10 @@
 </head>
 
 <body>
-<section id="parent">
+
     <header>
         <!-- Navigation Bar with links to other pages -->
-        <nav class="nav-list">
+        <nav id="nav-list">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -21,54 +21,60 @@
             </ul>
         </nav>
 
+
+
+        <!-- Component for title box with title, date posted and blog teaser -->
+        <section id="title-box">
+            <h2>Creating This Portfolio - Day 5</h2>
+            <p>On day 5 of working on the portfolio Jeremy discovers the benefit of throwing it all out and starting
+                again
+
+            </p>
+            <time datetime="2020-08-31">Posted on August 31 2020</time>
+            </div>
+        </section>
+
         <!-- Navigation Bar with links to previous post and blog home -->
-        <nav class="blog-list">
+        <nav id="blog-list">
             <ul>
                 <li><a href="blog4.html">&lAarr; Previous</a></li>
                 <li><a href="blog.html">Blog Home</a></li>
             </ul>
         </nav>
-
-        <!-- Component for title box with title, date posted and blog teaser -->
-        <section id="title-box">
-            <h2>Creating This Portfolio</h2>
-            <p>On day 5 of working on the portfolio Jeremy discovers the benefit of throwing it all out and starting
-                again
-                
-            </p>
-            <time datetime="2020-08-31">Posted on August 31 2020</time>
-            </div>
-        </section>
     </header>
 
-     <!-- Article element containing image and paragraphs for blog text -->
-    <article class="content-container">
+    <!-- Article element containing image and paragraphs for blog text -->
+    <article id="content-container">
         <!-- Picture element, used with srcset to allow browser to select which image to load based on window size -->
         <picture class="blog-image">
-            <source media="(min-width: 1024px") srcset="img/blog5-large.jpg">
-            <source media="(min-width: 768px") srcset="img/blog5-medium.jpg">
+            <source media="(min-width: 1024px" ) srcset="img/blog5-large.jpg">
+            <source media="(min-width: 768px" ) srcset="img/blog5-medium.jpg">
             <img src="img/blog5-small.jpg" alt="Throwing out the trash">
         </picture>
-        <p>
-            Pokem ipsum dolor sit amet Salamence lorem ipsum dolor sit amet Moltres Slakoth Swadloon Badge. Cascade
-            Badge Lavender Town Water Gun Victini Relicanth Mineral Badge Audino. Ground Swoobat Nidorino the enemy
-            Pokemon fainted Klang Vaporeon Abra. Rainbow Badge Budew Seismitoad Vaporeon Sinnoh Shaymin Sceptile.
-            Blue Ponyta Cubchoo Ducklett Bellossom Snover Magmar.
-        </p>
-        <p>
-            Consectetur adipisicing elit Tirtouga Porygon2 searching far and wide Klang Terrakion Lugia. Thunder
-            Badge Calcium Latios to denounce the evils of truth and love Phanpy Grumpig Weavile. Ground Beartic
-            Crustle Ash Ketchum to train them is my cause Lombre Gliscor. Fuchsia City Cofagrigus Ultra Ball I like
-            shorts Regirock Water Gun Horsea. Yellow Cobalion Meganium Arbok Brock Chatot Weezing.
-        </p>
-        <p>
-            Ivysaur Meganium quis nostrud exercitation Raticate Fire Red Treecko Magmortar. Consectetur adipisicing
-            elit Scratch Articuno Ferroseed Pokemon Master Aron Servine. Swift Golduck Kingdra Bronzor Fearow
-            Sandshrew Jellicent. Sapphire Escavalier Bronzor Pokemon The Movie 2000 Omastar Carnivine Moltres.
-            Harden Stunfisk Salamence Sableye Earthquake Gothita Kanto.
-        </p>
+        <!-- All text of the article is grouped together in one section -->
+        <section id="article-text">
+            <h3>Day 5</h3>
+            <p>
+                Pokem ipsum dolor sit amet Salamence lorem ipsum dolor sit amet Moltres Slakoth Swadloon Badge. Cascade
+                Badge Lavender Town Water Gun Victini Relicanth Mineral Badge Audino. Ground Swoobat Nidorino the enemy
+                Pokemon fainted Klang Vaporeon Abra. Rainbow Badge Budew Seismitoad Vaporeon Sinnoh Shaymin Sceptile.
+                Blue Ponyta Cubchoo Ducklett Bellossom Snover Magmar.
+            </p>
+            <p>
+                Consectetur adipisicing elit Tirtouga Porygon2 searching far and wide Klang Terrakion Lugia. Thunder
+                Badge Calcium Latios to denounce the evils of truth and love Phanpy Grumpig Weavile. Ground Beartic
+                Crustle Ash Ketchum to train them is my cause Lombre Gliscor. Fuchsia City Cofagrigus Ultra Ball I like
+                shorts Regirock Water Gun Horsea. Yellow Cobalion Meganium Arbok Brock Chatot Weezing.
+            </p>
+            <p>
+                Ivysaur Meganium quis nostrud exercitation Raticate Fire Red Treecko Magmortar. Consectetur adipisicing
+                elit Scratch Articuno Ferroseed Pokemon Master Aron Servine. Swift Golduck Kingdra Bronzor Fearow
+                Sandshrew Jellicent. Sapphire Escavalier Bronzor Pokemon The Movie 2000 Omastar Carnivine Moltres.
+                Harden Stunfisk Salamence Sableye Earthquake Gothita Kanto.
+            </p>
+        </section>
     </article>
-</section>
+
 
 </body>
 

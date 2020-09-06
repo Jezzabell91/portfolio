@@ -3,9 +3,9 @@
 - [x] Create 4 more blog posts
 - [x] Fix Styling on Blog landing page
 - [x] Fix Styling on Blog-post page
-- [ ] Create contact page
+- [x] Create contact page
 - [x] Fill in content for About Page
-- [ ] Link Dummy resume.pdf
+- [x] Link Dummy resume.pdf
 - [ ] Implement SRI
 - [ ] Place comments in the CSS and HTML code to indentify each component
 - [ ] Create JeremyBell_T1A2 directory with folders docs/, ppt/, src/
