@@ -7,7 +7,7 @@
 - [x] Fill in content for About Page
 - [x] Link Dummy resume.pdf
 - [ ] Implement SRI
-- [ ] Place comments in the CSS and HTML code to indentify each component
+- [x] Place comments in the CSS and HTML code to indentify each component
 - [x] Create JeremyBell_T1A2 directory with folders docs/, ppt/, src/
 - [ ] Put source code in to src/
 - [x] Put presentation in to ppt/

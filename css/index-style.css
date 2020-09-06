@@ -1,25 +1,30 @@
+/* Parent grid container to allow child grid container to be centered vertically  */
 #parent {
     height: 100vh;
     display: grid;
     align-items: center;
 }
+
+/* Grid container for landing page so elements are completely centered vertically and horizontally */
 #landing-grid {
     display: grid;
     place-items: center;
 }
 
+/* Border-radius 50% so that profile image is a circle */
 #profile img{
     height: 250px;
     width: 250px;
     border-radius: 50%;
 }
 
+
 #link-list {
     max-width: 50%;
     font-size: 5vh;
 }
 
-
+/* Let list be flexible so it changes with screen, as screen increases links become a row */
 ul {
     display: flex;
     flex-wrap: wrap;

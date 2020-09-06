@@ -1,3 +1,4 @@
+/* reset padding and margins to 0, set bg color for site */
 html, body {
     padding: 0px;
     margin: 0px;
@@ -5,6 +6,7 @@ html, body {
     background-color: rgb(240, 240, 240);
 }
 
+/* Create consistent link style for whole site */
 a {
     text-decoration: none;
     color: darkgray;
@@ -14,14 +16,17 @@ a:link {
     color: darkgray;
 }
 
+/* Links go dark red on hover */
 a:hover {
     color: darkred;
 }
 
+/* Remove bullets from lists */
 li {
     list-style: none;
 }
 
+/* Consistent nav bar style, 100% width with flex and centered elements, keep all on same row */
 #nav-list {
     width: 100%;
     text-align: center;
@@ -36,7 +41,7 @@ li {
     justify-content: center;
 }
 
-
+/* clamp size used so when page size increases so does the size of link text */
 #nav-list li {
     font-size: clamp(24px, 2.5vw, 2rem);
     margin-left: 2vw;

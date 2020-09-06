@@ -20,24 +20,13 @@ blockquote {
     padding: 10px;
 }
 
+/* Border-radius 50% so that profile image is a circle */
 picture img {
     height: 125px;
     width: 125px;
     border-radius: 50%;
 }
 
-a {
-    text-decoration: none;
-    color: darkgray;
-}
-
-a:link {
-    color: darkgray;
-}
-
-a:hover {
-    color: darkred;
-}
 
 /* Remove indentation and bullets */
 ul {
@@ -64,9 +53,11 @@ ul li {
     background-color: #708090;
 }
 
+/* contrasting bg with left side box */
 #right-side {
     background-color: lightgrey;
 }
+
 
 .content {
     margin-left: 15px;

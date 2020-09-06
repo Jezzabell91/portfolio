@@ -20,21 +20,25 @@
     color: #F2F2F2;
 }
 
+/* Max dimensions to normalise image size and help with layout */
 img {
     max-width: 320px;
     max-height: 180px;
 }
 
+/* Make flex container so child elements are responsive */
 #flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* Styling for blog card */
 .blog-card {
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
     padding: 5px;
+    /* flex 0 1 360px so min width is 360px and elements do not grow with size of screen */
     flex: 0 1 360px;
     margin: 5px;
     display: flex;
@@ -42,6 +46,7 @@ img {
     align-items: center;
 }
 
+/* Make Blog card stick out when user hovers */
 .blog-card :hover {
     border-radius: 10px;
     box-shadow: 10px 10px 25px rgba(186, 126, 126, 0.5);
@@ -56,11 +61,13 @@ time {
     padding: 0;
 }
 
+/* On Mobile don't show blog preview */
 .blog-preview {
     display: none;
 }
 
-@media screen and (min-width: 768px) {
+/* On larger screens show blog preview */
+@media screen and (min-width: 767px) {
 
     .blog-preview {
         display: inline;
