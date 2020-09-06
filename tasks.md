@@ -1,8 +1,8 @@
 ## Tasks to complete before submission
 
 - [x] Create 4 more blog posts
-- [ ] Fix Styling on Blog landing page
-- [ ] Fix Styling on Blog-post page
+- [x] Fix Styling on Blog landing page
+- [x] Fix Styling on Blog-post page
 - [ ] Create contact page
 - [x] Fill in content for About Page
 - [ ] Link Dummy resume.pdf

@@ -4,10 +4,6 @@ html, body {
     font-family: 'Roboto';
     background-color: rgb(240, 240, 240);
 }
-/* 
-h1 {
-    text-align: center;
-} */
 
 a {
     text-decoration: none;
@@ -24,4 +20,32 @@ a:hover {
 
 li {
     list-style: none;
+}
+
+.nav-list {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.nav-list ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+
+.nav-list li {
+    margin: 25px;
+    font-size: clamp(24px, 2.5vw, 2rem);
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.blog-list li {
+    font-size: 18px;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }

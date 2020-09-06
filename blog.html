@@ -13,33 +13,36 @@
     <!-- Header component with nav bar, title and blog introduction -->
     <header>
         <!-- Navigation Bar with links to other pages -->
-        <nav id="link-nav">
+        <nav class="nav-list">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    
 
-    <h1>My Blog</h1>
-    <p>This is where I post things I’ve been working on, things I’m interested in and occassionally nonsensical
-        ramblings</p>
+        <!-- Title box component -->
+        <section id="title-box">
+            <h1>My Blog</h1>
+            <p>This is where I post things I’ve been working on, things I’m interested in and occassionally nonsensical
+                ramblings</p>
+        </section>
+
     </header>
+
+
 
     <!-- Flex container holds the 5 most recent blogs so that they display responsively -->
     <section id="flex-container">
         <!-- Blog card components inlcude link to post, preview image, title, date posted and blog teaser -->
         <section class="blog-card">
             <a href="blog5.html">
-            <picture class="blog-preview-img">
-                <img src="img/blog5-small.jpg" alt="Trash">
-            </picture>
-        </a>
-        <a href="blog5.html">
-            <h3>Creating this Portfolio - Day 5</h3>
-        </a>
-            <time>Posted on August 31 2020</time>
+                <picture class="blog-preview-img">
+                    <img src="img/blog5-small.jpg" alt="Trash">
+                </picture>
+                <h3>Creating this Portfolio - Day 5</h3>
+                <time>Posted on August 31 2020</time>
+            </a>
             <section class="blog-preview">
                 <p>On day 5 of working on the portfolio Jeremy discovers the benefit of throwing it all out and starting
                     again </p>
@@ -47,46 +50,60 @@
         </section>
 
         <section class="blog-card">
-            <picture class="blog-preview-img">
-                <img src="img/blog4.jpg" alt="Flex and Grid Layout">
-            </picture>
-            <h3>Creating this Portfolio - Day 4</h3>
-            <time>Posted on August 30 2020</time>
+            <a href="blog4.html">
+                <picture class="blog-preview-img">
+                    <img src="img/blog4.jpg" alt="Flex and Grid Layout">
+                </picture>
+                <h3>Creating this Portfolio - Day 4</h3>
+                <time>Posted on August 30 2020</time>
+            </a>
             <section class="blog-preview">
-                <p>Day 4 as always brings new challenges. How the hell does flex and grid work and why is it so hard. </p>
+                <p>Day 4 as always brings new challenges. How the hell does flex and grid work and why is it so hard.
+                </p>
+            </section>
+        </section>
+
+
+        <section class="blog-card">
+            <a href="blog3.html">
+                <picture class="blog-preview-img">
+                    <img src="img/blog3.jpg" alt="Designing for different screens">
+                </picture>
+                <h3>Creating this Portfolio - Day 3</h3>
+                <time>Posted on August 29 2020</time>
+            </a>
+            <section class="blog-preview">
+                <p>On to day 3 and I start to realise the importance of mobile first design. This realisation changes
+                    everything.</p>
+            </section>
+        </section>
+
+
+        <section class="blog-card">
+            <a href="blog2.html">
+                <picture class="blog-preview-img">
+                    <img src="img/blog2.jpg" alt="Student sleeping at desk with coffees">
+                </picture>
+                <h3>Creating this Portfolio - Day 2</h3>
+                <time>Posted on August 28 2020</time>
+            </a>
+            <section class="blog-preview">
+                <p>Beep boop it’s day 2 and my brain is already mush and I need a nap. Let’s keep going through the
+                    motions and see what happens.</p>
             </section>
         </section>
 
         <section class="blog-card">
-            <picture class="blog-preview-img">
-                <img src="img/blog3.jpg" alt="Designing for different screens">
-            </picture>
-            <h3>Creating this Portfolio - Day 3</h3>
-            <time>Posted on August 29 2020</time>
+            <a href="blog1.html">
+                <picture class="blog-preview-img">
+                    <img src="img/blog1.jpg" alt="Screenshot of the code for the portfolio">
+                </picture>
+                <h3>Creating this Portfolio - Day 1</h3>
+                <time>Posted on August 27 2020</time>
+            </a>
             <section class="blog-preview">
-                <p>On to day 3 and I start to realise the importance of mobile first design. This realisation changes everything.</p>
-            </section>
-        </section>
-
-        <section class="blog-card">
-            <picture class="blog-preview-img">
-                <img src="img/blog2.jpg" alt="Student sleeping at desk with coffees">
-            </picture>
-            <h3>Creating this Portfolio - Day 2</h3>
-            <time>Posted on August 28 2020</time>
-            <section class="blog-preview">
-                <p>Beep boop it’s day 2 and my brain is already mush and I need a nap. Let’s keep going through the motions and see what happens.</p>
-            </section>
-        </section>
-
-        <section class="blog-card">
-            <picture class="blog-preview-img">
-                <img src="img/blog1.jpg" alt="Screenshot of the code for the portfolio">
-            </picture>
-            <h3>Creating this Portfolio - Day 1</h3>
-            <time>Posted on August 27 2020</time>
-            <section class="blog-preview">
-                <p>It’s day 1 of the first assignment with Coder Academy. Time to create a portfolio website using HTML + CSS.</p>
+                <p>It’s day 1 of the first assignment with Coder Academy. Time to create a portfolio website using HTML
+                    + CSS.</p>
             </section>
         </section>
     </section>

@@ -78,15 +78,6 @@ ul li {
     text-shadow: 0.5px 0.5px #708090;
 }
 
-#nav-list {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-
-#nav-list li {
-    margin: 25px;
-}
 
 /* Mobile Only Styling */
 @media screen and (max-width: 767px) {
