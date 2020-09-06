@@ -8,11 +8,11 @@
 - [x] Link Dummy resume.pdf
 - [ ] Implement SRI
 - [ ] Place comments in the CSS and HTML code to indentify each component
-- [ ] Create JeremyBell_T1A2 directory with folders docs/, ppt/, src/
+- [x] Create JeremyBell_T1A2 directory with folders docs/, ppt/, src/
 - [ ] Put source code in to src/
-- [ ] Put presentation in to ppt/
-- [ ] Put screenshots in README.md
-- [ ] Put all files linked by README.md in docs/ folder
+- [x] Put presentation in to ppt/
+- [x] Put screenshots in README.md
+- [x] Put all files linked by README.md in docs/ folder
 - [ ] Generate gitlog.txt by using command git log > gitlog.txt
 - [ ] Zip JeremyBell_T1A2 directory using zip -r JeremyBell_T1A2.zip JeremyBell_T1A2
 - [ ] Upload Submission in Canvas
