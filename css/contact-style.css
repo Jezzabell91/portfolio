@@ -1,0 +1,54 @@
+/* Set max image dimensions to normalise icon image size */
+img {
+    max-height: 96px;
+    max-width: 96px;
+}
+
+/* Parent grid container to vertically align content to centre of the page*/
+#parent {
+    height: 80vh;
+    display: grid;
+    align-items: center;
+}
+
+/* Flex so content wraps when screen width changes, align-items: baseline used so that when items expand on hover other items do not move vertically */
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+/* Styling for icon container, centered text, white bg, rounded corners with shadow */
+.icon-container {
+    text-align: center;
+    background-color: #fff;
+    /* flex: 0 0 200px is used because we don't want the elements resizing when screen changes - always 200px */
+    flex: 0 0 200px;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Make link area bigger, idea taken from https://stackoverflow.com/a/20327676 */
+.icon-container a {     
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 2em;     
+    margin: -2em; 
+ }
+
+ /* Expand icon container when hovered */
+ .icon-container :hover {
+    margin: 10px;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+/* Additional padding to align with other icons */
+#gmail {
+    padding-top: 8px;
+}
